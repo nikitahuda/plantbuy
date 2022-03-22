@@ -1,0 +1,1843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css" />
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ 
+  <!-- Font Awesome Icons -->
+  <!-- <link rel="stylesheet" href="FontAwesomePro/css/all.min.css"> -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" />
+
+  <title>Azmain Faiyaz!</title>
+  <style>
+     html{
+       scroll-behavior: smooth;
+    }
+    
+    html,body {
+      color: #434242;
+      /* font-family: "Open Sans", sans-serif !important; */
+      font-family: sans-serif !important;
+      height: 100%;
+    }
+
+    body {
+      font-size: 15px;
+      line-height: 1.64;
+      background:#F3EFE0;;
+    }
+    
+    .background-white {
+    background: #FFFFFF;
+    }
+    .background-gray {
+    background: #434242;
+  }
+
+    h1,h2,h3,h4,h5,h6,h1,h2,h3,h4,h5,h6,strong,b {
+       /* font-family: "Open Sans", sans-serif !important; */
+      font-family: sans-serif !important;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    
+    h1, .h1 {
+    font-size: 36px;
+}
+
+  .h4, h4 {
+      font-size: 1.8rem;
+      margin-top: 0px;
+  }
+
+    h1,h4 {
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 54px;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 28px;
+      margin-top: 20px;
+    }
+
+    h2, h3 {
+      font-weight: 300;
+      color: darkslateblue;
+    }
+    hr {
+        margin: 40px 0px;
+        border-color: #727878;
+        opacity: 0.2;
+        filter: alpha(opacity=20);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .lead {
+      font-size: 16px;
+    }
+
+    p.lead {
+      text-align: center;
+      color: #727878;
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: 768px) {
+      .lead {
+        font-size: 21px;
+      }
+    }
+    .container {
+      max-width: 1280px;
+      padding: 40px 180px;
+    }
+    @media (max-width: 992px){
+    .container {
+        max-width: 750px;
+      }
+    }
+
+    @media (max-width: 767px){
+      .container {
+      padding: 70px 20px;
+      min-width: 280px;
+      }
+    }
+
+    .opl {
+      position: absolute;
+      top: 100px;
+      left: 0px;
+      z-index: 99999;
+    }
+
+    .jumbotronmain {
+      background: no-repeat center fixed url(img/coverpic.jpg);
+      -webkit-background-size: 100%;
+      -moz-background-size: 100%;
+      -o-background-size: 100%;
+       background-size: 100%;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+       background-size: cover;
+      -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale')";
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale');
+      margin-bottom: 0px;
+      padding: 0px;
+    }
+
+   
+
+    .jumbotronmain .overlay {
+      background-color: midnightblue;
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      opacity: 0.55;
+      filter: alpha(opacity=75);
+      z-index: 2;
+      height: 100vh;
+    }
+
+    .jumbotronmain .container {
+      position: relative;
+      top: 28%;
+      z-index: 4;
+      text-align: center;
+    }
+
+    .jumbotronmain .container>* {
+      text-align: center;
+      color: #ffffff;
+    }
+  
+
+    .jumbotronmain .container h1 {
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ffffff;
+      border-bottom-color: rgba(255, 255, 255, 0.35);
+      display: inline-block;
+    }
+
+    @media screen and (min-width: 768px) {
+
+      .jumbotronmain h1,
+      .jumbotronmain .h1 {
+        font-size: 60px;
+      }
+    }
+
+    .jumbotronmain .container .lead {
+      font-size: 28px;
+    }
+
+    .jumbotronmain .scroll-down {
+      height: 80px;
+      width: 110px;
+      display: block;
+      position: absolute;
+      bottom: 0px;
+      right: 5%;
+      background-color: #222222;
+      text-align: center;
+      z-index: 6;
+    }
+
+    @media (max-width: 767px) {
+      .jumbotronmain .scroll-down {
+        width: 100%;
+        right: 0px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .container {
+        padding: 60px 20px;
+        min-width: 280px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .jumbotronmain .container {
+        top: 20%;
+        padding-top: 0px;
+      }
+    }
+
+    @-webkit-keyframes wiggle {
+      50% {
+        top: 10px;
+        opacity: 100;
+      }
+    }
+
+    @keyframes wiggle {
+      50% {
+        top: 10px;
+        opacity: 100;
+      }
+    }
+
+    .jumbotronmain .scroll-down .glyphicon {
+      color: #ffff;
+      font-size: 30px;
+      padding-right: 2px;
+      padding-top: 20px;
+      animation-name: wiggle;
+      animation-duration: 2.2s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+    }
+
+    .glyphicon {
+      color: white;
+      position: relative;
+      top: 0px;
+      display: inline-block;
+      font-family: "Glyphicons Halflings";
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    @media (min-width: 768px) {
+      .fixednav {
+        position: fixed !important;
+        top: 60px !important;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .fixednav {
+        position: fixed !important;
+        top: 0 !important;
+      }
+    }
+
+    .navbar {
+      border: 0px;
+      background-color: #222222;
+      position: absolute;
+      top: 100%;
+      right: 5%;
+      width: 110px;
+      z-index: 999;
+      padding: 0;
+    }
+
+    @media (max-width: 767px) {
+      .navbar {
+        left: 0px;
+        width: 100%;
+      }
+    }
+
+    .navbar .navbar-collapse {
+      padding: 0px;
+      max-height: none;
+    }
+
+    .navbar-header {
+      margin-right: 90%;
+    }
+
+    @media (min-width: 768px) {
+      .navbar-header {
+        display: none;
+      }
+
+      .navbar .navbar-collapse {
+        display: block;
+      }
+    }
+
+    .navbar .nav>li {
+      display: block;
+      float: none;
+      height: 80px;
+    }
+
+    .navbar .nav>li a {
+      display: block;
+      height: 80px;
+      text-align: center;
+      padding-top: 30px;
+      font-weight: 600;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .navbar .nav>li a:hover {
+      text-decoration: none;
+    }
+
+    .navbar-default .navbar-nav>.active>a,
+    .navbar-default .navbar-nav>.active>a:hover,
+    .navbar-default .navbar-nav>.active>a:focus {
+      background: darkslateblue;
+      color: #ffffff;
+    }
+
+    @media (max-width: 767px) {
+      .navbar .nav>li a {
+        height: 60px;
+        text-align: center;
+        padding-top: 20px;
+        font-weight: 600;
+        color: #ffffff;
+      }
+    }
+
+    .navbar-default .navbar-toggle {
+      border-color: #ddd;
+    }
+
+    .navbar-toggle {
+      position: relative;
+      float: right;
+      padding: 10px 12px;
+      margin-left: 5px;
+      margin-top: 10px;
+      margin-right: 15px;
+      margin-bottom: 10px;
+      background-color: transparent;
+      background-image: none;
+      border: 1px solid transparent;
+      border-radius: 4px;
+    }
+
+    .navbar-toggle .glyphicon-align-justify {
+      display: block;
+      width: 22px;
+      height: 15px;
+      border-radius: 1px;
+    }
+
+    #profile .row>div img {
+      width: 100%;
+      max-width: 246px;
+      max-height: 280px;
+      height: auto;
+      border-radius: 50%;
+    }
+    #profile .row > div {
+    margin-bottom: 20px;
+    }
+
+    @media (max-width: 767px) {
+      #profile .row * {
+        text-align: center;
+      }
+    }
+    #experiences .experience {
+    margin-bottom: 20px;
+    }
+  
+
+   #experiences .experience .experience-details {
+    display: block;
+    margin-top: 6px;
+   }
+
+  #experiences .experience .experience-details * {
+    color: darkslateblue;
+  }
+  @media (max-width: 767px){
+    #experiences .experience .experience-details > span {
+        display: block;
+        margin-bottom: 6px;
+    }
+    #experiences .experience .experience-details .seperator {
+    display: none;
+    }
+  }
+
+  #abilities ul > li {
+    min-height: 30px;
+    padding: 3px 0px;
+  }
+
+  #abilities ul > li .ability-score .glyphicon {
+    color: #DFE0E0;
+    font-size: 14px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  #abilities ul > li .ability-score .glyphicon.filled {
+    color: darkslateblue;
+  }
+  
+  ul.no-bullets {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #abilities ul > li .ability-score {
+    float: right;
+  }
+  .project-referal {
+    margin-top: 40px;
+  }
+  .btn{
+    font-size: 15px;
+  }
+  .btn-primary {
+    background-color: darkslateblue;
+    border-color: darkslateblue;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    background-color: mediumblue;  
+    border-color: mediumblue;
+    color: white;
+}
+
+#projects .row > div {
+    margin-bottom: 30px;
+}
+
+
+    /* Common style */
+    figure {
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      overflow: hidden;
+      margin: -0.135em;
+      width: auto;
+      height: 250px;
+      background: #3085a3;
+      text-align: center;
+      cursor: pointer;
+    }
+
+     figure img {
+      position: relative;
+      display: block;
+      min-height: 100%;
+      opacity: 1;
+    }
+
+     figure figcaption {
+      padding: 2em;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1.25em;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+     figure figcaption::before,
+     figure figcaption::after {
+      pointer-events: none;
+    }
+
+     figure figcaption,
+     figure a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Anchor will cover the whole item by default */
+    /* For some effects it will show as a button */
+     figure a {
+      z-index: 1000;
+      text-indent: 200%;
+      white-space: nowrap;
+      font-size: 0;
+      opacity: 0;
+    }
+
+     figure h2 {
+      word-spacing: -0.15em;
+
+      font-weight: 300;
+      
+    }
+
+     figure h2 span {
+      font-weight: 800;
+    }
+
+     figure h2,
+     figure p {
+      margin: 0;
+    }
+
+     figure p {
+      letter-spacing: 1px;
+      font-size: 68.5%;
+    }
+
+    /*---------------*/
+    /***** Effect *****/
+    /*---------------*/
+
+    figure.effect {
+      background: darkslateblue;
+    }
+
+    figure.effect img {
+      width: -webkit-calc(100% + 20px);
+      width: calc(100% + 20px);
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      -webkit-transform: translate3d(-10px, 0, 0);
+      transform: translate3d(-10px, 0, 0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    figure.effect:hover img {
+      opacity: 0.2;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+
+    figure.effect figcaption {
+      text-align: left;
+    }
+
+    figure.effect h2 {
+      position: relative;
+      overflow: hidden;
+      padding: 0.5em 0;
+      color: white;
+      font-size: 30px;
+      text-align: left;
+    }
+
+    figure.effect h2::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: #fff;
+      content: '';
+      -webkit-transition: -webkit-transform 0.35s;
+      transition: transform 0.35s;
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+
+    figure.effect:hover h2::after {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+
+    figure.effect p {
+      padding: 1em 0;
+      opacity: 0;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+
+    figure.effect:hover p {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+
+    figure.effect h2 {
+      opacity: 0;
+    }
+    figure.effect:hover h2 {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+
+    #projects  .glyphicon {
+    color: white;
+    top: 12px;
+    font-size: 18px;
+  }
+
+  #projects  .icon {
+    background: darkslateblue;
+    position: absolute;
+    top: -2px;
+    right: 13px;
+    width: 48px;
+    height: 48px;
+    z-index: 1;
+}
+  
+    /* end figure */
+
+
+  #contact {
+    padding-bottom: 200px;
+  }
+
+  #contact h2, #contact .row * {
+    color: #FFFFFF;
+}
+#contact a {
+    display: block;
+    line-height: 32px;
+    margin-bottom: 20px;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+  }
+#contact a .icon {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .icon {
+    display: inline-block;
+    background: url(img/sm_icon_sprite.png) no-repeat;
+    height: 32px;
+    width: 32px;
+}
+
+.icon.icon-twitter {
+    background-position: 0px 0px;
+  }
+
+.icon.icon-linkedin {
+    background-position: 0px -32px;
+  }
+
+  .icon.icon-email {
+    background-position: 0px -96px;
+  }
+  .jumbotronmain{
+    height: 100vh
+
+  }
+  </style>
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+  <!-- home layout -->
+  <div id="top" class="jumbotronmain" data-src="/view/images/window_rain_animation.gif" data-position="bottom right">
+    <div class="container">
+      <h1>Azmain Faiyaz Dip</h1>
+      <p class="lead">Personal resume</p>
+    </div>
+
+    <div class="overlay"></div>
+
+    <a href="#profile" class="scroll-down">
+      <span class="glyphicon glyphicon-chevron-down"></span>
+      <!-- <i class="fas fa-chevron-down"></i> -->
+    </a>
+  </div>
+
+  <!-- navbar section -->
+  <nav class="navbar navbar-default" id="navbar-example" role="navigation">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="glyphicon glyphicon-align-justify"></span>
+      </button>
+    </button>
+    </div>
+
+
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li id="pli" ><a class="alink" href="#profile">Profile</a></li>
+        <li id="exli"><a class="alink" href="#experiences">Experiences</a></li>
+        <li id="abli"><a href="#abilities">Abilities</a></li>
+        <li id="prli"><a href="#projects">Projects</a></li>
+        <li id="coli"><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+  </nav>
+  
+  <!-- profile section -->
+  <div class="background-white">
+    <div id="profile" class="container">
+      <h2 class="pt-5 mt-5 pt-md-0 ">Profile</h2>
+      <p class="lead">I&#039;m a creative PHP webdeveloper</p>
+      <hr>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <h3>About me</h3>
+          <p>
+            I would describe myself as an ambitious visionary who
+            works hard to achieve my goals. I am an active person 
+            who loves adventures and always want to learn new things
+            I am an allround web developer. I am a junior programmer 
+            with good knowledge of front-end and back-end techniques. 
+            I love spending time on fixing little details and 
+            optimizing websites. 
+          </p>
+        </div>
+
+        <div class="col-lg-4 text-center">
+          <img src="img/profilepic.jpg" alt="Azmain Faiyaz Dip"/>
+        </div>
+
+        <div class="col-lg-4">
+          <h3>Details</h3>
+          <p>
+            <strong>Name:</strong><br />
+            Azmain Faiyaz Dip<br />
+            <strong>Age:</strong><br />
+            25 years<br />
+            <strong>Location:</strong><br />
+            Bashyndhara R/A, Dhaka, Earth
+          </p>
+
+          <a href="https://twitter.com/AzmainDip" class="twitter-follow-button" data-show-count="false" data-size="large"
+            data-show-screen-name="false">Follow @azmaindip</a>
+        </div>
+
+      </div>
+
+      <div class="text-center">
+        <p>
+          Got inspired? Like the theme? Or do you just like the website? No
+          problem, just buy me a coffe and make me happy!
+        </p>
+
+        <input type="image" src="img/btn_donate_SM.gif"  name="submit"
+          alt="PayPal - The safer, easier way to pay online!" />
+      </div>
+    </div>
+  </div>
+
+  <!-- experience section -->
+  <div id="experiences" class="container" style="background: #F3EFE0;">
+    <h2>Experiences</h2>
+    <p class="lead">
+      &ldquo;The road of excess leads to the palace of wisdom.&rdquo;<br><span style="position:relative; left:-12px">― William Blake</span> 
+    </p>
+    <hr />
+  
+    <h3>Educations</h3>
+  
+  
+    <div class="experiences">
+  
+      <div class="experience row">
+        <div class="col-md-12 col-lg-4 ">
+          <h4>Northsouth University</h4>
+          <p class="experience-period">
+            Jan 2016 -
+            Dec 2021 </p>
+        </div>
+        <div class="col-md-12 col-lg-8">
+          <p>
+            <strong>Bachelor - Computer Science & Engineering (CSE)</strong>
+            <span class="hidden-phone">
+              The education was mainly programming-based, but I also learned about MYSQL, Networking, MVC and more.
+              During my time in university, I specialized in C Programming. Here I learned about the importance of OOP,
+              web and user experience and design. </span>
+            <span class="experience-details">
+              <span class="location">
+                <span class="glyphicon glyphicon-map-marker"></span>
+                Dhaka </span>
+            </span>
+          </p>
+        </div>
+      </div>
+  
+  
+      <div class="experience row">
+        <div class="col-md-12 col-lg-4">
+          <h4>Comilla Ispahani Public School And College</h4>
+          <p class="experience-period">
+            Aug 2014 -
+            Jun 2015 </p>
+        </div>
+        <div class="col-md-12 col-lg-8">
+          <p>
+            <strong>Science (Major: Higher Math)</strong>
+            <span class="hidden-phone">
+              I graduated college, where I enjoyed doing science, math, physics and ict. I realized in my second year
+              of college that I wanted to do something with websites, and so I started making small web-based
+              applications. </span>
+            <span class="experience-details">
+              <span class="location">
+                <span class="glyphicon glyphicon-map-marker"></span>
+                 Comilla </span>
+            </span>
+          </p>
+        </div>
+      </div>
+  
+  
+      <div class="experience row">
+        <div class="col-md-12 col-lg-4">
+          <h4>Kachua Govt. Pilot High School</h4>
+          <p class="experience-period">
+            Aug 2010 -
+            Jun 2014 </p>
+        </div>
+        <div class="col-md-12 col-lg-8">
+          <p>
+            <strong>Science (Major: Higher Math)</strong>
+            <span class="hidden-phone">
+              I graduated highschool, where I enjoyed making freiends and working together. 
+              That was the time when I got my interest in scinece and technologies.</span>
+            <span class="experience-details">
+              <span class="location">
+                <span class="glyphicon glyphicon-map-marker"></span>
+                Chandpur </span>
+            </span>
+          </p>
+        </div>
+      </div>
+  
+  
+    </div>
+  
+  
+  
+    <hr />
+  
+    <h3>Careers</h3>
+  
+  
+    <div class="experiences">
+  
+  
+      <div class="experience row">
+        <div class="col-md-12 col-lg-4">
+          <h4>Northsouth University | ECE</h4>
+          <p class="experience-period">
+            Sep 2020 -
+            Jan 2021 </p>
+        </div>
+        <div class="col-md-12 col-lg-8">
+          <p>
+            <strong>Research</strong>
+            <span class="hidden-phone">
+              Working as a researcher on cloud technologies. Research was based on implementation of cloud
+              computing in e-health. </span>
+            <span class="experience-details">
+              <span class="location">
+                <span class="glyphicon glyphicon-map-marker"></span>
+                Bashudhara R/A </span>
+  
+  
+              <span class="seperator">|</span>
+                <span class="link">
+                  <span class="glyphicon glyphicon-link"></span>
+                  <a href="http://www.northsouth.edu" target="_blank">http://www.northsouth.edu</a>
+                </span>
+              </span>
+           </p>
+        </div>
+      </div>
+
+      <div class="experience row">
+        <div class="col-md-12 col-lg-4">
+          <h4>Transcom | Information System Automation</h4>
+          <p class="experience-period">
+            Aug 2021 -
+            current </p>
+        </div>
+        <div class="col-md-12 col-lg-8">
+          <p>
+            <strong>Fulltime - Junior System Analyst</strong>
+            <span class="hidden-phone">
+              Working as a Junior Devloper on a it sector of a large industry in Bangladesh. The
+              application is Laravel based and as a team we are working in a fully organized way. . </span>
+           
+            <span class="experience-details">
+              <span class="location">
+                <span class="glyphicon glyphicon-map-marker"></span>
+                Gulshan-2 </span>
+  
+  
+              <span class="seperator">|</span>
+                <span class="link">
+                  <span class="glyphicon glyphicon-link"></span>
+                  <a href="http://www.transcombd.com" target="_blank">http://www.transcombd.com</a>
+                </span>
+              </span>
+           </p>
+        </div>
+      </div>
+  
+  
+    </div>
+  </div>
+
+  <!-- abilities section -->
+  <div class="background-white">
+    <div id="abilities" class="container">
+      <h2>Abilities</h2>
+      <p class="lead">
+        &ldquo;No man knows what he can do until he tries.&rdquo;<br /><span style="position:relative;left: -12px;">― Carter Godwin Woodson</span> 
+      </p>
+  
+      <hr />
+  
+      <h3>Skills</h3>
+  
+      <div class="row">
+  
+        <div class="col-md-12 col-lg-6">
+          <ul class="no-bullets">
+  
+  
+            <li>
+              <span class="ability-title">Bootstrap Framework</span>
+              <span class="ability-score">
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+              </span>
+            </li>
+  
+  
+  
+            <li>
+              <span class="ability-title">CSS(3)</span>
+              <span class="ability-score">
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+              </span>
+            </li>
+  
+  
+  
+            <li>
+              <span class="ability-title">HTML(5)</span>
+              <span class="ability-score">
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+              </span>
+            </li>
+
+  
+            <li>
+              <span class="ability-title">MySQL</span>
+              <span class="ability-score">
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+              </span>
+            </li>
+  
+  
+  
+            <li>
+              <span class="ability-title">PHP</span>
+              <span class="ability-score">
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+              </span>
+            </li>
+  
+  
+            <li>
+              <span class="ability-title">JQuery</span>
+              <span class="ability-score">
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star "></span>
+  
+  
+              </span>
+            </li>
+            <li>
+              <span class="ability-title">Android</span>
+              <span class="ability-score">
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star "></span>
+  
+  
+              </span>
+            </li>
+  
+          </ul>
+        </div>
+        <div class="col-md-12 col-lg-6">
+          <ul class="no-bullets">
+            <li>
+              <span class="ability-title">Javascript</span>
+              <span class="ability-score">
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star "></span>
+  
+  
+              </span>
+            </li>
+  
+  
+  
+            <li>
+              <span class="ability-title">Laravel Framework</span>
+              <span class="ability-score">
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star "></span>
+  
+  
+              </span>
+            </li>
+  
+  
+  
+  
+  
+  
+            <li>
+              <span class="ability-title">MVC Pattern</span>
+              <span class="ability-score">
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star "></span>
+  
+  
+              </span>
+            </li>
+  
+  
+  
+            <li>
+              <span class="ability-title">Object Orientated Programming</span>
+              <span class="ability-score">
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star "></span>
+  
+  
+              </span>
+            </li>
+  
+  
+  
+            <li>
+              <span class="ability-title">SASS / SCSS</span>
+              <span class="ability-score">
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star "></span>
+  
+  
+              </span>
+            </li>
+
+            
+            <li>
+              <span class="ability-title">Java</span>
+              <span class="ability-score">
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star filled"></span>
+  
+  
+                <span class="glyphicon glyphicon-star "></span>
+  
+  
+              </span>
+            </li>
+  
+  
+  
+          </ul>
+        </div>
+  
+      </div>
+
+      <div class="text-center project-referal">
+        <p>This project is build on a custom made PHP framework.</p>
+        <a href="https://github.com/azmainfaiyaz/MyPersonalResume" class="btn btn-primary" target="_blank">See project on Github</a>
+      </div>
+
+
+
+
+
+      <hr />
+
+      <h3>Languages</h3>
+
+      <div class="row">
+
+
+        <div class="col-md-12 col-lg-6">
+          <ul class="no-bullets">
+
+
+            <li>
+              <span class="ability-title">Bangla (Mother tongue)</span>
+              <span class="ability-score">
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+              </span>
+            </li>
+
+
+
+            <li>
+              <span class="ability-title">English (Daily use)</span>
+              <span class="ability-score">
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star"></span>
+
+
+              </span>
+            </li>
+
+
+
+          </ul>
+        </div>
+        <div class="col-md-12 col-lg-6">
+          <ul class="no-bullets">
+
+
+
+            <li>
+              <span class="ability-title">Hindi (Survivable)</span>
+              <span class="ability-score">
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star "></span>
+
+
+                <span class="glyphicon glyphicon-star "></span>
+
+
+                <span class="glyphicon glyphicon-star "></span>
+
+
+              </span>
+            </li>
+
+
+
+            <li>
+              <span class="ability-title">Russian (маленький)</span>
+              <span class="ability-score">
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star "></span>
+
+
+                <span class="glyphicon glyphicon-star "></span>
+
+
+                <span class="glyphicon glyphicon-star "></span>
+
+
+                <span class="glyphicon glyphicon-star "></span>
+
+
+              </span>
+            </li>
+
+
+
+          </ul>
+        </div>
+
+
+      </div>
+
+      <hr />
+
+      <h3>Tools</h3>
+
+      <div class="row">
+
+        <div class="col-md-12 col-lg-6">
+          <ul class="no-bullets">
+
+            <li>
+              <span class="ability-title">Firefox</span>
+              <span class="ability-score">
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+              </span>
+            </li>
+
+
+
+            <li>
+              <span class="ability-title">MS Office</span>
+              <span class="ability-score">
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+              </span>
+            </li>
+
+
+
+            <li>
+              <span class="ability-title">Notepad</span>
+              <span class="ability-score">
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+              </span>
+            </li>
+
+
+            <li>
+              <span class="ability-title">Windows</span>
+              <span class="ability-score">
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+              </span>
+            </li>
+
+          </ul>
+        </div>
+        <div class="col-md-12 col-lg-6">
+          <ul class="no-bullets">
+
+
+            <li>
+              <span class="ability-title">Git</span>
+              <span class="ability-score">
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star "></span>
+
+
+              </span>
+            </li>
+
+
+            <li>
+              <span class="ability-title">Sublime Text</span>
+              <span class="ability-score">
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star "></span>
+
+
+              </span>
+            </li>
+
+
+            <li>
+              <span class="ability-title">Adobe Photoshop</span>
+              <span class="ability-score">
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star "></span>
+
+
+                <span class="glyphicon glyphicon-star "></span>
+
+
+              </span>
+            </li>
+
+
+
+            <li>
+              <span class="ability-title">Paint</span>
+              <span class="ability-score">
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star filled"></span>
+
+
+                <span class="glyphicon glyphicon-star "></span>
+
+
+                <span class="glyphicon glyphicon-star "></span>
+
+
+                <span class="glyphicon glyphicon-star "></span>
+
+
+              </span>
+            </li>
+
+
+
+          </ul>
+        </div>
+
+      </div>
+
+   </div>
+  </div>
+
+  <!-- project section -->
+  <div id="projects" class="container">
+    <h2>Projects</h2>
+    <p class="lead">
+      &ldquo;Creativity is knowing how to hide your sources.&rdquo;<br /><span style="position:relative;left: -12px;">― C.E.M. Joad</span> 
+    </p>
+  
+    <hr />
+  
+  
+    <div class="row text-center">
+  
+  
+      <div class="col-12 col-lg-6">
+        <figure class="effect">
+          <img src="img/FitThakun.jpg" alt="img13" />
+          <figcaption>
+            <h2>Fit  <span>Thakun</span></h2>
+            <p>Android app based on healthcare tools like bmi calculator, step counter etc.</p>
+            <a href="#projects">View more</a>
+          </figcaption>
+        </figure>
+        <span class="icon">
+          <a href="#projects"><span class="glyphicon glyphicon-new-window"></span></a>
+        </span>
+      </div>
+  
+  
+      <div class="col-12 col-lg-6">
+        <figure class="effect">
+          <img src="img/lovecat.png" alt="img13" />
+          <figcaption>
+            <h2>LOVE <span> CAT</span></h2>
+            <p>Demo UI for a cat finder website based on html,css and bootsrap.</p>
+            <a href="#projects">View more</a>
+          </figcaption>
+        </figure>
+        <span class="icon">
+          <a href="#projects"><span class="glyphicon glyphicon-new-window"></span></a>
+        </span>
+      </div>
+  
+  
+      <div class="col-12 col-lg-6">
+        <figure class="effect">
+          <img src="img/WellnessStudio.jpg" alt="img13" />
+          <figcaption>
+            <h2>Wellness <span>Studio</span></h2>
+            <p>Demo e-commerce website using tailwind, tabulator and javascript</p>
+            <a href="#projects">View more</a>
+          </figcaption>
+        </figure>
+        <span class="icon">
+          <a href="#projects"><span class="glyphicon glyphicon-new-window"></span></a>
+        </span>
+      </div>
+  
+  
+      <div class="col-12 col-lg-6">
+        <figure class="effect">
+          <img src="img/SecondarySales.jpg" alt="img13" />
+          <figcaption>
+            <h2>Secondary <span>Sales</span></h2>
+            <p>Secondary Sales data management website with laravel, adminlte, mysql, jquery etc.</p>
+            <a href="#projects">View more</a>
+          </figcaption>
+        </figure>
+        <span class="icon">
+          <a href="#projects"><span class="glyphicon glyphicon-new-window"></span></a>
+        </span>
+      </div>
+  
+  
+    </div>
+  
+  </div>
+  
+  <!-- contact section -->
+  <div class="background-gray">
+    <div id="contact" class="container">
+      <h2>Contact</h2>
+      <p class="lead">
+        “I would love to hear from you."
+      </p>
+    
+      <hr>
+    
+      <div class="row">
+        <div class="col-md-12 col-lg-6">
+          <ul class="no-bullets">
+            <li>
+              <a href="https://twitter.com/AzmainDip" target="_blank">
+                <span class="icon icon-twitter"></span>
+                 www.twitter.com/AzmainDip</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/azmain-faiyaz-dip-085540214/" target="_blank">
+                <span class="icon icon-linkedin"></span>
+                www.linkedin.com/in/azmain-faiyaz-dip</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-12 col-lg-6">
+          <ul class="no-bullets">
+            <li>
+              <a href="mailto:www.azmainfaiyaz@gmail.com">
+                <span class="icon icon-email"></span>
+                  www.azmainfaiyaz@gmail.com </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    
+      <hr>
+    
+      <div class="text-center">
+        
+        <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+    
+        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fazmainfaiyaz.github.io%2FMyPersonalResume%2F&width=150&layout=button_count&action=like&size=small&share=true&height=46&appId" width="150" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+  <script>
+    $("#pli").click(function(){
+      $(".navbar-ex1-collapse").removeClass("show");     
+      });
+    
+    $("#exli").click(function(){
+      $(".navbar-ex1-collapse").removeClass("show");     
+      });
+
+    $("#abli").click(function(){
+      $(".navbar-ex1-collapse").removeClass("show");     
+      });
+
+    $("#prli").click(function(){
+      $(".navbar-ex1-collapse").removeClass("show");     
+      });
+      
+    $("#coli").click(function(){
+      $(".navbar-ex1-collapse").removeClass("show");    
+      });
+    
+    $(document).ready(function () {
+
+      $(window).bind("scroll load", function () {
+        var scrollTop     = $(window).scrollTop();
+        var profileHeight = $('#profile').offset().top;
+        var experiencesHeight = $('#experiences').offset().top;
+        var abilitiesHeight = $('#abilities').offset().top;
+        var projectsHeight = $('#projects').offset().top;
+        var contactHeight = $('#contact').offset().top;
+
+        var navWidth = $(window).width();
+        var navHeight = $(window).height() - 68;
+        if(navWidth < 767){
+          navHeight = $(window).height();
+        }
+       
+        if (scrollTop > navHeight) {
+          $("nav").addClass("fixednav");
+        
+        } else {
+          $("nav").removeClass("fixednav");
+        }
+
+
+        $("#pli,#exli,#abli,#prli,#coli").removeClass("active");
+
+        if (scrollTop > contactHeight-20) {
+
+          $("#coli").addClass("active");
+
+          }
+          else if (scrollTop > projectsHeight-1 ) {
+
+          $("#prli").addClass("active");
+
+          }
+
+        else if (scrollTop > abilitiesHeight-1) {
+        
+          $("#abli").addClass("active");
+
+        } 
+         else if (scrollTop > experiencesHeight-1 ) {
+
+          $("#exli").addClass("active");
+
+          }
+
+         else {
+          $("#pli").addClass("active");
+    
+        }
+      });
+ 
+    });
+  </script>
+</body>
+
+</html>
